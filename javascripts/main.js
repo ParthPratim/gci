@@ -18,7 +18,7 @@ var thank = function() {
 var getContributors = function(page) {
   // Fetching contributors list
   $.ajax({
-      url: "https://api.github.com/repos/jboss-outreach/gci/contributors?page=1&&per_page=50"
+      url: "https://api.github.com/repos/jboss-outreach/gci/contributors?page=1&&per_page=50" 
   }).done(function(data) {
       var l = data.length;
       for(i = 0 ; i < l ;i++) {
